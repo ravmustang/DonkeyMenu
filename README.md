@@ -1,8 +1,10 @@
 # DonkeyMenu
 GUI Action Menu with Hotkey
+Separate Admin / Donator / Regular Player Menus (NEW)
 
 Donkey Menu GUI
-Current Release v0.7a - Full Donkey Menu Admin/Donators/Regular and all its features
+Current Release v0.7a - Full Donkey Menu Admin/Donators/Regular and all its features June 21st,2015
+
 Prior Release v0.4 - Base Donkey menu June 5th,2015
 
 Install instructions will come as its updated.
