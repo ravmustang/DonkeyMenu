@@ -2,8 +2,8 @@
 GUI Action Menu with Hotkey
 
 Donkey Menu GUI
-
-Current Release v0.4 - Base Donkey menu June 5th,2015
+Current Release v0.7a - Full Donkey Menu Admin/Donators/Regular and all its features
+Prior Release v0.4 - Base Donkey menu June 5th,2015
 
 Install instructions will come as its updated.
 For now the mission file is plug and play compatible with your Altis Epoch servers
@@ -18,12 +18,20 @@ Possum - ComputerMancer
 
 Crafting GUI - =RAV=MusTanG
 
+Donator GUI - =RAV=MusTanG(NEW)
+
+Survivor Hunt -  - =RAV=MusTanG(NEW)
+
+Admin Hunt - NibbleGaming(NEW)
+
+ASORGS - ASOR Gear Selection(NEW)
+
 Earplugs - ComputerMancer 
 
 Suicide - Community Effort
 
 Surrender - WIP Community Inspired
 
-Temp Groups - =RAV=MusTanG
+Temp Groups - =RAV=MusTanG(NEW)
 
 Player chosen Status Bar(resolution based options) - Darth Rouge with mods by =RAV=MusTanG
