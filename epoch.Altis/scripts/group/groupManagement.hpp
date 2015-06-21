@@ -164,6 +164,8 @@ class GroupManagement
 			y = 0.621 * safezoneH + safezoneY;
 			w = 0.113437 * safezoneW;
 			h = 0.066 * safezoneH;
+			font = "PuristaMedium";
+			sizeEx = 0.04;
 		};
 		class DonkeyFrame: DTG_RscFrame
 		{
