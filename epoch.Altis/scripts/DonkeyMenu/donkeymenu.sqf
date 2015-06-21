@@ -13,18 +13,47 @@ donkeymenuKeyPressEnabled = true;
 //	To use	F4							as your hotkey, please choose:		4		in the variable below
 //	To use	F5							as your hotkey, please choose:		5		in the variable below
 dpMenu_myHotkeyChoice = 4;
-
-//dpMenu_Admin =[];
-//dpMenu_Donator = [];
+////////////////////////////////////////////////
+//This is where you will uncomment the next two lines and add your UID's
+dpMenu_Admin =[];
+dpMenu_Donator = [];
+////////////////////////////////////////////////
+dp_Menu_Handler = 
+{
+	if ((getPlayerUID player) in admin_list) then
+	{
+		createdialog "Admin_Menu_GUI";
+	}
+	else
+	{
+		if ((getPlayerUID player) in dpvip_list) then
+		{
+			createdialog "Donator_Menu_GUI";
+		}
+		else
+		{
+			createdialog "Donkey_Menu_GUI";
+		};
+	};
+};
 
 dpOpen_Crafting = {
 	createdialog "Crafting_Menu_dialog";
 };
-
-dp_Menu_Handler = 
-{
-				createdialog "Donkey_Menu_GUI";
-		
+dpOpen_Donator = {
+	createdialog "Donator_Menu_dialog";
+};
+dpOpen_TempGroups = {
+	[] execVM "scripts\group\dialog\groupMenu.sqf";
+};
+dp_SurvivorHunt = {
+	[] execVM "scripts\donkeymenu\survivorhunt\survivorhunt_client.sqf";
+};
+dp_AdminHunt = {
+	[] execVM "scripts\donkeymenu\admin\adminhunt_client.sqf";
+};
+dp_StartArsenal = {
+	[]execVM "ASORGS\open.sqf";
 };
 //Thanks ComputerMancer
 dp_Possum_Play = {

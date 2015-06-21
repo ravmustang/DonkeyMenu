@@ -1,7 +1,7 @@
 /*
 	LetThereBeLight
 	by second_coming (http://epochmod.com/forum/index.php?/user/16619-second-coming/)
-	Edited for custom use by Donkey Punch Servers by =RAV=MusTanG
+	Edited for custom use by Donkey Punch Servers
 	Allow players to place temporary lighting at their base (requires player to be in range of a friendly jammer)
 	
 	*/	

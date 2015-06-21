@@ -1,7 +1,7 @@
 /*
 	LetThereBeLight
 	by second_coming (http://epochmod.com/forum/index.php?/user/16619-second-coming/)
-	Edited for custom use by Donkey Punch Servers by =RAV=MusTanG
+	Edited for custom use by Donkey Punch Servers
 	Allow players to place temporary lighting at their base (requires player to be in range of a friendly jammer)
 	
 	*/	
@@ -11,12 +11,12 @@
 // ======================================================================================================================================================================================
 
 // Item to place
-_ItemsClassName							= "Land_BarrelWater_F";	// Classname of the item to place
-_ItemDisplayName						= "Water Barrel";				// Item name to display in the player menu
+_ItemsClassName							= "Land_HBarrierTower_F";	// Classname of the item to place
+_ItemDisplayName						= "H-Barrier Nest";				// Item name to display in the player menu
 
 // Materials Required to Create Lights
-_EnergyRequired							= 250;						// Amount of energy expended to build (0 for zero energy required)
-_MaterialRequired1						= "ItemCorrugatedLg";				// First material required to build (default is 'CircuitParts' or Electronic Component)
+_EnergyRequired							= 1500;						// Amount of energy expended to build (0 for zero energy required)
+_MaterialRequired1						= "CircuitParts";				// First material required to build (default is 'CircuitParts' or Electronic Component)
 _MaterialRequired1Count					= 2;
 _MaterialRequired2						= "ItemCorrugated";			// Second material required to build (default is 'ItemCorrugated' or small metal parts)
 _MaterialRequired2Count					= 2;

@@ -5,7 +5,7 @@ if (!isDedicated and hasInterface) then
 {
 	waitUntil {alive vehicle player};	
 	waitUntil {typeOF player != "VirtualMan_EPOCH"};
-		[true] call compile preprocessFileLineNumbers "donkeymenu\donkeymenu.sqf";
+		[true] call compile preprocessFileLineNumbers "scripts\donkeymenu\donkeymenu.sqf";
 };
 earplugsout = true;
 if (donkeymenuKeyPressEnabled) then {

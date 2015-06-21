@@ -3,6 +3,8 @@
 	by =RAV=MusTanG
 	First Release - Plenty to do!
 */
+#include "scripts\group\groupManagement.hpp"
+
 author = "Epoch Mod Team";
 class Header
 {
@@ -121,8 +123,11 @@ class CfgSounds
 			titles[] = {};
 		};
 };
-#include "DonkeyMenu\dpdmregularmenu.hpp"
-#include "DonkeyMenu\dpcraftgui.hpp"
-#include "DonkeyMenu\stopplay.hpp"
-#include "DonkeyMenu\stopsurrender.hpp"
+#include "scripts\donkeymenu\dpdongui.hpp"
+#include "scripts\donkeymenu\dpcraftgui.hpp"
+#include "scripts\donkeymenu\stopplay.hpp"
+#include "scripts\donkeymenu\stopsurrender.hpp"
+#include "scripts\donkeymenu\dpdmdonatormenu.hpp"
+#include "scripts\donkeymenu\dpdmadminmenu.hpp"
+#include "scripts\donkeymenu\dpdmregularmenu.hpp"
 ////////////////////////////////////////////

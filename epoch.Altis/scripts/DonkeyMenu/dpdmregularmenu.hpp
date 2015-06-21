@@ -175,7 +175,7 @@ class DMreg_RscPicture
 		class RscButton_1604: DMreg_RscButton
 		{
 			idc = 1604;
-			text = "TG WIP"; //--- ToDo: Localize;
+			text = "Temp Groups"; //--- ToDo: Localize;
 			x = 0.4175 * safezoneW + safezoneX;
 			y = 0.39 * safezoneH + safezoneY;
 			w = 0.0670312 * safezoneW;
@@ -194,7 +194,7 @@ class DMreg_RscPicture
 			h = 0.055 * safezoneH;
 			colorText[] = {0,0.3,1,1.5};
 			tooltip = "Silence all the NOISE";
-			action = "closeDialog 0;[] call dp_Earplugs";
+			action = "closeDialog 0;[] call cm_Earplugs_FUNc";
 		};
 		class RscButton_1606: DMreg_RscButton
 		{
@@ -218,7 +218,7 @@ class DMreg_RscPicture
 			h = 0.055 * safezoneH;
 			colorText[] = {1,0,1,1.5};
 			tooltip = "Drop all your weapons and Give UP";
-			action = "closeDialog 0;[player] execVM 'donkeymenu\surrender.sqf'";
+			action = "closeDialog 0;[player] execVM 'scripts\donkeymenu\surrender.sqf'";
 		};
 		class RscText_1000: DMreg_RscText
 		{
@@ -234,7 +234,7 @@ class DMreg_RscPicture
 		class DMreg_RscButton_1609: DMreg_RscButton
 		{
 			idc = -1;
-			text = "SB WIP"; //--- ToDo: Localize;
+			text = "Status Bar"; //--- ToDo: Localize;
 			x = 0.613437 * safezoneW + safezoneX;
 			y = 0.39 * safezoneH + safezoneY;
 			w = 0.0670312 * safezoneW;
@@ -251,10 +251,10 @@ class DMreg_RscPicture
 			h = 0.055 * safezoneH;
 			colorText[] = {1,0,0,1};
 		};
-		class RscPicture: DMreg_RscPicture
+		class RscPicture: DDM_RscPicture
         {
 			idc = -1;
-			text = "donkeymenu\donkeypunch.paa";
+			text = "scripts\donkeypunch.paa";
 			x = 0.04625 * safezoneW + safezoneX;
 			y = 0.412 * safezoneH + safezoneY;
 			w = 0.195937 * safezoneW;

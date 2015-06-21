@@ -1,7 +1,7 @@
 /*
 	LetThereBeLight
 	by second_coming (http://epochmod.com/forum/index.php?/user/16619-second-coming/)
-	Edited for custom use by Donkey Punch Servers by =RAV=MusTanG
+	Edited for custom use by Donkey Punch Servers
 	Allow players to place temporary lighting at their base (requires player to be in range of a friendly jammer)
 	
 	*/	
@@ -11,8 +11,8 @@
 // ======================================================================================================================================================================================
 
 // Item to place
-_ItemsClassName							= "TargetP_Inf3_F";	// Classname of the item to place
-_ItemDisplayName						= "Bandit Range Target";				// Item name to display in the player menu
+_ItemsClassName							= "Land_BarrelWater_F";	// Classname of the item to place
+_ItemDisplayName						= "Water Barrel";				// Item name to display in the player menu
 
 // Materials Required to Create Lights
 _EnergyRequired							= 250;						// Amount of energy expended to build (0 for zero energy required)
@@ -24,7 +24,7 @@ _AllowWithNoMaterial 					= true;						// Skip material check and allow players 
 // Usage Restrictions
 _MaxItems								= 4;							// Maximum amount of lights allowed within MaxLightsRange metres
 _MaxItemsRange							= 100;						// Range to check for other placed lights (in metres)
-_FriendlyJammerRangeCheck				= false;						// Require to be in range of friendly jammer
+_FriendlyJammerRangeCheck				= true;						// Require to be in range of friendly jammer
 _FriendlyJammerRange					= 225;						// Range in metres allowed from friendly jammer
 // ======================================================================================================================================================================================
 // End of User configurable Variables
@@ -175,7 +175,7 @@ if(_hasEnough && _hasEnergy && _CanPlace && _FriendlyInRange) then
 	r_interrupt = false;
 	player switchMove "";
 	player playActionNow "stop";
-	cutText [format["Spawned %1 DO NOT SAVE after server restart!",_ItemDisplayName], "PLAIN DOWN"];
+	cutText [format["Spawned %1 DO NOT SAVE after server restart!",_ItemDisplayName], "PLAIN DOWN"];	
 	_ObjectPlaced = true;
 }
 else
