@@ -36,4 +36,6 @@ Surrender - WIP Community Inspired
 
 Temp Groups - =RAV=MusTanG(NEW)
 
+//////////////////////////////////Removed from project due to community Fix for original///////////////////////////////////
 Player chosen Status Bar(resolution based options) - Darth Rouge with mods by =RAV=MusTanG
+Above is cancelled - Status bar can resolve the issue on its own now! Thanks Halv and Darth
