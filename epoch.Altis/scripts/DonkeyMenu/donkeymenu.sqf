@@ -1,12 +1,12 @@
 /*
-	Donkey Menu GUI 
+	Donkey Menu GUI v0.2 
 	June 1,2015
 	by =RAV=MusTanG
 	DonkeyPunch.INFO
 */
 donkeymenuKeyPressEnabled = true;
-// HOTKEY TOGGLE Donkey Menu
-// Hotkey Options
+// HOTKEY CONFIGURATION FOR: TOGGLE EARPLUG IN/OUT VIA KEYPRESS FUNCTION
+// List of Available Hotkey Options
 //	To use	INSERT					as your hotkey, please choose:		1		in the variable below
 //	To use	NumPadMultiply		as your hotkey, please choose:		2		in the variable below
 //	To use	NumPadDivide			as your hotkey, please choose:		3		in the variable below
@@ -15,9 +15,20 @@ donkeymenuKeyPressEnabled = true;
 dpMenu_myHotkeyChoice = 4;
 ////////////////////////////////////////////////
 //This is where you will uncomment the next two lines and add your UID's
-dpMenu_Admin =[];
-dpMenu_Donator = [];
+
+admin_list = ["0","0"];// your admins go here
+dpvip_list = ["0","0","0"];// your VIP/registered players here
 ////////////////////////////////////////////////
+dpOpen_Crafting = {
+	createdialog "Crafting_Menu_dialog";
+};
+dpOpen_Donator = {
+	createdialog "Donator_Menu_dialog";
+};
+dpOpen_TempGroups = {
+	[] execVM "scripts\group\dialog\groupMenu.sqf";
+};
+
 dp_Menu_Handler = 
 {
 	if ((getPlayerUID player) in admin_list) then
@@ -37,27 +48,8 @@ dp_Menu_Handler =
 	};
 };
 
-dpOpen_Crafting = {
-	createdialog "Crafting_Menu_dialog";
-};
-dpOpen_Donator = {
-	createdialog "Donator_Menu_dialog";
-};
-dpOpen_TempGroups = {
-	[] execVM "scripts\group\dialog\groupMenu.sqf";
-};
-dp_SurvivorHunt = {
-	[] execVM "scripts\donkeymenu\survivorhunt\survivorhunt_client.sqf";
-};
-dp_AdminHunt = {
-	[] execVM "scripts\donkeymenu\admin\adminhunt_client.sqf";
-};
-dp_StartArsenal = {
-	[]execVM "ASORGS\open.sqf";
-};
-//Thanks ComputerMancer
 dp_Possum_Play = {
-		[player] execVM "donkeymenu\playpossum.sqf";
+		[player] execVM "scripts\donkeymenu\playpossum.sqf";
 };
 
 dp_Possum_Stop = {
@@ -68,11 +60,11 @@ dp_Possum_Stop = {
 };
 
 dp_suicide = {
-	[]execVM "donkeymenu\suicide.sqf";
+	[]execVM "scripts\donkeymenu\suicide.sqf";
 };
 
 dp_Surrender = {
-	[] execVM "donkeymenu\surrender.sqf";
+	[] execVM "scripts\donkeymenu\surrender.sqf";
 };	 
 dp_Surrender_Stop = {
 	//player playMoveNow "AmovPercMstpSsurWnonDnon_AmovPercMstpSnonWnonDnon";//Animation out
@@ -82,18 +74,18 @@ dp_Surrender_Stop = {
 		sleep 1;
 		player enableSimulation true;
 };
-//Thanks ComputerMancer!
-dp_Earplugs = {
-		if (earplugsout) then {
-		systemchat "Earplugs have been inserted...";
-		5 fadeSound 0.25;
-		earplugsout=false;
-	} else {
-		systemchat "Earplugs have been removed.";
-		10 fadeSound 1;	
-		earplugsout=true;
-	};	
+
+dp_SurvivorHunt = {
+	[] execVM "scripts\donkeymenu\survivorhunt\survivorhunt_client.sqf";
 };
+
+dp_AdminHunt = {
+	[] execVM "scripts\donkeymenu\admin\adminhunt_client.sqf";
+};
+dp_StartArsenal = {
+	[]execVM "ASORGS\open.sqf";
+};
+
 dp_pushUPS = {
 		hint "Kicking Ass!";
 		player playAction "AmovPercMstpSnonWnonDnon_exercisePushup";  //PUshUPs

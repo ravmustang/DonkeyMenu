@@ -23,30 +23,7 @@ DonkeyPunch_HotKeys =
 		};
 		/*case 62:  //F4 63 is F5
 		{
-            if ((getPlayerUID player) in admin_list) then
-				{
-					createdialog "Admin_Menu_GUI";
-					createdialog "Donkey_Menu_GUI";
-				};
-				if ((getPlayerUID player) in dpvip_list && !admin_list)then
-					{
-						createdialog "Donator_Menu_dialog";
-					}
-					else
-					{
-						createdialog "Donkey_Menu_GUI";
-					};
-           
-		};
-        case 14:
-        {
-            if (variable and alive player) then {
-                [] execVM ".sqf";
-            };
-        };
-		case 211:   //delete key
-		{
-            
+           [] call dp_Menu_Handler;
 		};*/
 	};
     _return

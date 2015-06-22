@@ -188,7 +188,7 @@ class Crafting_Menu_dialog {
 		 class RscPicture: DCM_RscPicture
         {
 			idc = -1;
-			text = "donkeymenu\donkeypunch.paa";
+			text = "scripts\donkeypunch.paa";
 			x = 0.04625 * safezoneW + safezoneX;
 			y = 0.412 * safezoneH + safezoneY;
 			w = 0.195937 * safezoneW;

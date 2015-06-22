@@ -4,7 +4,6 @@
 	v0.7 Released since EpochPro are thieves 
 */
 #include "scripts\group\groupManagement.hpp"
-
 author = "Epoch Mod Team";
 class Header
 {
@@ -108,10 +107,12 @@ class CfgEpochAirDrop
 	AirDropFreq = 1200; //AirDropChance, to decide if Air drop occurs, will only be checked once per AirDropFreq time period, for each player. Min value = 120.
 	AirDropChance = 6; //Percentage chance of air drop, for current player. Checked every AirDropFreq and upon antagonists spawn trigger. -1 To disable.
 };
+#include "ASORGS\menu.hpp"
+class CfgFunctions 
+{
+    #include "ASORGS\cfgfunctions.hpp"
+};
 
-
-////////////////////////////////////////////
-//Donkey Menu
 class CfgSounds
 {
 	class Bam
@@ -130,5 +131,4 @@ class CfgSounds
 #include "scripts\donkeymenu\dpdmdonatormenu.hpp"
 #include "scripts\donkeymenu\dpdmadminmenu.hpp"
 #include "scripts\donkeymenu\dpdmregularmenu.hpp"
-#include "scripts\group\groupManagement.hpp"
 ////////////////////////////////////////////
