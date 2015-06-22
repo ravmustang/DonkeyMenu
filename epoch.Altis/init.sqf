@@ -1,3 +1,8 @@
+/*
+	Donkey Menu GUI 
+	by =RAV=MusTanG
+	v0.7 Released since EpochPro are thieves 
+*/
 [] execVM "scripts\group\keyManagement.sqf";
 //=====================================================================================================================
 //Start of NibbleGaming AdminHunt:

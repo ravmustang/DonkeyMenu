@@ -130,4 +130,5 @@ class CfgSounds
 #include "scripts\donkeymenu\dpdmdonatormenu.hpp"
 #include "scripts\donkeymenu\dpdmadminmenu.hpp"
 #include "scripts\donkeymenu\dpdmregularmenu.hpp"
+#include "scripts\group\groupManagement.hpp"
 ////////////////////////////////////////////
